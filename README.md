@@ -1,4 +1,4 @@
-# TO-DO LIST
+# TO-DO LIST ✅
 
 This "TO-DO LIST" is a simple web application tool that allows users to create daily tasks.
 
@@ -9,7 +9,7 @@ This "TO-DO LIST" is a simple web application tool that allows users to create d
 
 
 ## Demo
-Check how it works [HERE]().
+Check how it works [HERE](https://captainsakura.github.io/To-do-List/).
 
 ## Technologies
 - HTML
