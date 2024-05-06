@@ -1,0 +1,20 @@
+.section {
+  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 9px 7px #e6e5e5;
+}
+
+.section__paragraph {
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
+.section__paragraph--taskList {
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.section__taskInput {
+  font-weight: 400;
+  padding: 5px;
+}

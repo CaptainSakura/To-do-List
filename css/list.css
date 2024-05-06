@@ -1,0 +1,22 @@
+.list {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 35px minmax(100px, 1fr) 35px 35px;
+  grid-gap: 20px;
+  border-bottom: 2px solid #eeeeee;
+  padding: 20px;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+.list__button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px;
+}
+
+.list__button--remove {
+    background-color: red;
+}
+
