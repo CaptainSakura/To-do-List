@@ -54,18 +54,15 @@
           }>
             ✓
           </button>
-
-         <span
-          ${task.done ? 'style="text-decoration: line-through"' : ""}>
-          ${task.content}
+          <span
+            ${task.done ? 'style="text-decoration: line-through"' : ""}>
+            ${task.content}
           </span>
-
           <button class="list__button list__button--remove js-remove">
           ✗
           </button>
         </li>
-
-        `;
+      `;
     }
 
     document.querySelector(".js-tasks").innerHTML = htmlString;
