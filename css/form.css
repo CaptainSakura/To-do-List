@@ -31,6 +31,8 @@
 .form__newTask {
   font-size: 15px;
   padding: 12px;
+  height: 50px;
+
 }
 
 .form__newTask:focus {
