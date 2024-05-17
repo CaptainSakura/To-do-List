@@ -3,7 +3,7 @@
   grid-template-columns: 1fr auto;
   grid-gap: 20px;
   padding: 15px 20px 15px;
-  font-size: 21px;
+  font-size: px;
 }
 
 @media (max-width: 767px) {
@@ -17,6 +17,7 @@
   color: white;
   border: none;
   padding: 7px;
+  font-size: 15px;
 }
 
 .form__button:hover {
@@ -28,6 +29,10 @@
 }
 
 .form__newTask {
-  font-weight: 400;
-  padding: 5px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.form__newTask:focus {
+  cursor: pointer;
 }
