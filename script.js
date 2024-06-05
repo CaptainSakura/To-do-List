@@ -74,12 +74,15 @@
     render();
 
     const form = document.querySelector(".js-form");
+    const taskInput = document.querySelector(".js-form__newTask");
+
     const onFormSubmit = (event) => {
       event.preventDefault();
 
       const newTaskContent = document
         .querySelector(".js-form__newTask")
         .value.trim();
+      taskInput.focus();
 
       if (newTaskContent === "") {
         return;
@@ -92,4 +95,5 @@
   };
 
   init();
+  taskInput.focus();
 }
