@@ -53,9 +53,10 @@
         <header>
           <h3 class="header__Tertiary">Lista zadań</h3>
         </header>
-        <button class="section__buttonShowHidden js-section__buttonShowHidden ">Pokaż ukończone</button>
-        <button class="section__buttonDoneAll js-section__buttonDoneAll">Zakończ wszystkie</button>
-
+        <div class="js-section__buttonsContainer section__buttonsArea">
+          <button class="section__buttonToggleHideDone js-section__buttonToggleHideDone">Pokaż ukończone</button>
+          <button class="section__buttonDoneAll js-section__buttonDoneAll">Zakończ wszystkie</button>
+        </div>
         <div class="section__paragraph--taskList">
           <ul class="tasks js-tasks"></ul>
 
