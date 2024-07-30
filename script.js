@@ -50,7 +50,7 @@
 
   const hideDoneTasksButtonEvent = () => {
     const hideDoneAll = document.querySelector(
-      ".js--section__buttonToggleHideDone"
+      ".js-section__buttonToggleHideDone"
     );
     hideDoneAll.addEventListener("click", hideDoneTasks);
   };
