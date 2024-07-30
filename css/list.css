@@ -10,13 +10,32 @@
 }
 
 .list__button {
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 8px;
+  background-color: rgb(35, 216, 47);
+  color: white;
+  border: none;
+  padding: 8px;
+
+}
+
+.list__button--green {
+  color: white;
+}
+
+.list__button--green:hover {
+  transition: 1s;
+  background-color: green;
+}
+
+.list__button--green:active {
+  background-color: rgb(35, 216, 47);
+}
+
+.list__button--red:hover {
+  transition: 1s;
+  background-color: rgb(255, 9, 9);
 }
 
 .list__button--remove {
-    background-color: red;
+  background-color: rgb(239, 170, 170);
 }
 

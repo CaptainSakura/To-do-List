@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr auto;
   grid-gap: 20px;
-  padding: 15px 20px 15px;
+  padding: 15px 24px 15px 20px;
   font-size: 12px;
 }
 
@@ -22,6 +22,8 @@
 
 .form__button:hover {
   background-color: rgb(67, 201, 211);
+  transition: 1s;
+  transform: scale(1.1);
 }
 
 .form__button:active {
