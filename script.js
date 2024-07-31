@@ -28,6 +28,7 @@
       { ...tasks[index], done: !tasks[index].done },
       ...tasks.slice(index + 1),
     ];
+    console.log("Toggled task done:", tasks);
     render();
   };
 
@@ -55,10 +56,12 @@
     hideDoneAll.addEventListener("click", hideDoneTasks);
   };
 
-  const toggleDoneButtons = document.querySelectorAll(".js-done");
-  toggleDoneButtons.forEach((button, index) => {
-    button.addEventListener("click", () => toggleTaskDone(index));
-  });
+  // const toggleDoneButtons = document.querySelectorAll(".js-done");
+  // console.log("Toggle done buttons:", toggleDoneButtons);
+  // toggleDoneButtons.forEach((button, index) => {
+  //   button.addEventListener("click", () => toggleTaskDone(index));
+  //   console.log("Clicked toggle button:", index);
+  // });
 
   const bindEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove");
@@ -66,6 +69,12 @@
       removeButton.addEventListener("click", () => {
         removeTask(index);
       });
+    });
+    const toggleDoneButtons = document.querySelectorAll(".js-done");
+    console.log("Toggle done buttons:", toggleDoneButtons);
+    toggleDoneButtons.forEach((button, index) => {
+      button.addEventListener("click", () => toggleTaskDone(index));
+      console.log("Clicked toggle button:", index);
     });
   };
 
@@ -75,12 +84,11 @@
       if (!hideDone || !task.done) {
         newTask += `
         <li class="list">
-          <button class="list__button list__button--green js-done"
-          ${task.done ? 'style= "color: #fff"' : ""}>
-            ✓
+          <button class="list__button list__button--green js-done">
+          ${task.done ? "✓" : ""}
           </button>
-          <span
-            ${task.done ? 'style="text-decoration: line-through " ' : ""}>
+          <span class="list__taskContent"
+            ${task.done ? "list__taskContent--done" : ""}>
             ${task.content}
           </span>
           <button class="list__button list__button--red list__button--remove js-remove">
