@@ -13,12 +13,25 @@
   background-color: rgb(35, 216, 47);
   color: white;
   border: none;
-  padding: 8px;
+}
 
+.list__taskContent {
+  color: black;
+}
+
+.list__taskContentDone {
+  text-decoration: line-through;
+  color: grey;
 }
 
 .list__button--green {
   color: white;
+  padding: 10px;
+
+}
+
+.list__button--red {
+  padding: 10px;
 }
 
 .list__button--green:hover {
@@ -38,4 +51,3 @@
 .list__button--remove {
   background-color: rgb(239, 170, 170);
 }
-
