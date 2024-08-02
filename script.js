@@ -56,13 +56,6 @@
     hideDoneAll.addEventListener("click", hideDoneTasks);
   };
 
-  const toggleDoneButtons = document.querySelectorAll(".js-done");
-  console.log("Toggle done buttons:", toggleDoneButtons);
-  toggleDoneButtons.forEach((button, index) => {
-    button.addEventListener("click", () => toggleTaskDone(index));
-    console.log("Clicked toggle button:", index);
-  });
-
   const bindEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove");
     removeButtons.forEach((removeButton, index) => {
@@ -70,33 +63,26 @@
         removeTask(index);
       });
     });
+    const toggleDoneButtons = document.querySelectorAll(".js-done");
+    console.log("Toggle done buttons:", toggleDoneButtons);
+    toggleDoneButtons.forEach((button, index) => {
+      button.addEventListener("click", () => toggleTaskDone(index));
+      console.log("Clicked toggle button:", index);
+    });
   };
-  // for (const task of tasks) {
-  //   if (!hideDone || !task.done) {
-  //     newTask += `
-  //     <li class="list">
-  //       <button class="list__button list__button--green js-done">
-  //       ${task.done ? "" : ""}
-  //       ✓
-  //       </button>
-  //       <span class="list__taskContent"
-  //         ${task.done ? "list__taskcontent--done" : ""}>
-  //         ${task.content}
-  //       </span>
-  //       <button class="list__button list__button--red list__button--remove js-remove">
-  //       ✗
-  //       </button>
-  //     </li>
-  //   `;
+
   const renderTasks = () => {
     let newTask = "";
     tasks.forEach((task) => {
       newTask += `<li class="list__item ${
-        task.done && hideDone ? "list__item--hidden" : ""}">
+        task.done && hideDone ? "list__item--hidden" : ""
+      }">
                     <button class="list__button list__button--done js-done">
                         ${task.done ? "✔" : ""}
                     </button>
-                        <span class=${task.done ? "list__item--done" : ""}>${task.content}</span>
+                        <span class=${
+                          task.done ? "list__item--done" : ""
+                        }>${task.content}</span>
                     <button class="list__button list__button--red list__button--remove js-remove">
                     ✗
                     </button>
