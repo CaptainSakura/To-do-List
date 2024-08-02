@@ -1,4 +1,4 @@
-.list {
+.list__item {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 35px minmax(100px, 1fr) 35px 35px;
@@ -7,10 +7,10 @@
   padding: 20px;
   align-items: center;
   word-wrap: break-word;
+  flex-basis: 29px;
 }
 
 .list__button {
-  background-color: rgb(35, 216, 47);
   color: white;
   border: none;
 }
@@ -19,27 +19,28 @@
   color: black;
 }
 
-.list__taskContentDone {
+.list__item--done {
   text-decoration: line-through;
   color: grey;
 }
 
-.list__button--green {
+.list__button--done {
   color: white;
-  padding: 10px;
-
+  padding: 4px 6px;
+  background-color: rgb(35, 216, 47);
+  height: 29px;
 }
 
 .list__button--red {
-  padding: 10px;
+  padding: 4px 6px;
 }
 
-.list__button--green:hover {
+.list__button--done:hover {
   transition: 1s;
   background-color: green;
 }
 
-.list__button--green:active {
+.list__button--done:active {
   background-color: rgb(35, 216, 47);
 }
 
@@ -50,4 +51,8 @@
 
 .list__button--remove {
   background-color: rgb(239, 170, 170);
+}
+
+.list__item--hidden {
+  display: none;
 }
