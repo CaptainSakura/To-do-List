@@ -1,6 +1,6 @@
 # TO-DO LIST ✅
 
-This "TO-DO LIST" (https://captainsakura.github.io/To-do-List/) is a simple web application tool that allows users to create daily tasks.
+This "TO-DO LIST" ((https://captainsakura.github.io/To-do-List/) is a simple web application tool that allows users to create daily tasks.
 
 *This project was created as part of learning HTML, CSS, and JavaScript.*
 
