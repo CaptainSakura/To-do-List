@@ -56,12 +56,12 @@
     hideDoneAll.addEventListener("click", hideDoneTasks);
   };
 
-  // const toggleDoneButtons = document.querySelectorAll(".js-done");
-  // console.log("Toggle done buttons:", toggleDoneButtons);
-  // toggleDoneButtons.forEach((button, index) => {
-  //   button.addEventListener("click", () => toggleTaskDone(index));
-  //   console.log("Clicked toggle button:", index);
-  // });
+  const toggleDoneButtons = document.querySelectorAll(".js-done");
+  console.log("Toggle done buttons:", toggleDoneButtons);
+  toggleDoneButtons.forEach((button, index) => {
+    button.addEventListener("click", () => toggleTaskDone(index));
+    console.log("Clicked toggle button:", index);
+  });
 
   const bindEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove");
@@ -69,12 +69,6 @@
       removeButton.addEventListener("click", () => {
         removeTask(index);
       });
-    });
-    const toggleDoneButtons = document.querySelectorAll(".js-done");
-    console.log("Toggle done buttons:", toggleDoneButtons);
-    toggleDoneButtons.forEach((button, index) => {
-      button.addEventListener("click", () => toggleTaskDone(index));
-      console.log("Clicked toggle button:", index);
     });
   };
 
