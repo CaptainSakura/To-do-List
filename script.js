@@ -71,28 +71,37 @@
       });
     });
   };
-
+  // for (const task of tasks) {
+  //   if (!hideDone || !task.done) {
+  //     newTask += `
+  //     <li class="list">
+  //       <button class="list__button list__button--green js-done">
+  //       ${task.done ? "" : ""}
+  //       ✓
+  //       </button>
+  //       <span class="list__taskContent"
+  //         ${task.done ? "list__taskcontent--done" : ""}>
+  //         ${task.content}
+  //       </span>
+  //       <button class="list__button list__button--red list__button--remove js-remove">
+  //       ✗
+  //       </button>
+  //     </li>
+  //   `;
   const renderTasks = () => {
     let newTask = "";
-    for (const task of tasks) {
-      if (!hideDone || !task.done) {
-        newTask += `
-        <li class="list">
-          <button class="list__button list__button--green js-done">
-          ${task.done ? "✓" : ""}
-          </button>
-          <span class="list__taskContent"
-            ${task.done ? "list__taskContent--done" : ""}>
-            ${task.content}
-          </span>
-          <button class="list__button list__button--red list__button--remove js-remove">
-          ✗
-          </button>
-        </li>
-      `;
-      }
-    }
-
+    tasks.forEach((task) => {
+      newTask += `<li class="list__item ${
+        task.done && hideDone ? "list__item--hidden" : ""}">
+                    <button class="list__button list__button--done js-done">
+                        ${task.done ? "✔" : ""}
+                    </button>
+                        <span class=${task.done ? "list__item--done" : ""}>${task.content}</span>
+                    <button class="list__button list__button--red list__button--remove js-remove">
+                    ✗
+                    </button>
+                </li>`;
+    });
     document.querySelector(".js-tasks").innerHTML = newTask;
     bindEvents();
   };
