@@ -1,7 +1,6 @@
 .section {
   margin-top: 10px;
   background-color: #fff;
-  box-shadow: 0px 0px 9px 7px #e6e5e5;
 }
 
 .section__paragraph {
@@ -17,4 +16,64 @@
 .section__taskInput {
   font-weight: 400;
   padding: 5px;
+}
+
+.section__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  background-color: white;
+  border-bottom: 1px solid rgb(204, 201, 201);
+}
+
+@media (max-width: 767px) {
+  .section__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section__buttons {
+  margin-top: 5px;
+  padding-bottom: 10px;
+
+}
+
+.section__buttonToggleHideDone--marginTop {
+  margin-top: 10px;
+  background-color: grey;
+}
+
+.section__buttonToggleHideDone {
+  color: rgb(0, 167, 179);
+  border: none;
+  background-color: white;
+  padding-bottom: 15px;
+}
+
+.section__buttonToggleHideDone:active {
+  color: red;
+}
+
+.section__buttonToggleHideDone:hover {
+  color: rgb(18, 112, 119);
+}
+
+.section__buttonDoneAll {
+  color: rgb(0, 167, 179);
+  border: none;
+  background-color: white;
+  padding-bottom: 15px;
+}
+
+.section__buttonDoneAll:active {
+  color: red;
+}
+
+.section__buttonDoneAll:hover {
+  color: rgb(18, 112, 119);
+}
+
+.section__buttonDoneAll:disabled {
+  color: rgb(226, 222, 222);
+
 }
