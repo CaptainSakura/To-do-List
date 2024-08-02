@@ -27,17 +27,17 @@
 .list__button--done {
   color: white;
   padding: 4px 6px;
-  background-color: rgb(35, 216, 47);
+  background-color: rgb(56, 154, 62);
   height: 29px;
 }
 
 .list__button--red {
-  padding: 4px 6px;
+  padding: 5px 7px;
 }
 
 .list__button--done:hover {
   transition: 1s;
-  background-color: green;
+  background-color: rgb(133, 199, 133);
 }
 
 .list__button--done:active {
