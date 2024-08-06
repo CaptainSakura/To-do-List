@@ -84,7 +84,7 @@
                           task.done ? "list__item--done" : ""
                         }>${task.content}</span>
                     <button class="list__button list__button--red list__button--remove js-remove">
-                    ✗
+                    🗑
                     </button>
                 </li>`;
     });
