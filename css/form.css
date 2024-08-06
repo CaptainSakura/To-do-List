@@ -3,7 +3,7 @@
   grid-template-columns: 1fr auto;
   grid-gap: 20px;
   padding: 15px 24px 15px 20px;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 @media (max-width: 767px) {
@@ -17,7 +17,7 @@
   color: white;
   border: none;
   padding: 15px;
-  font-size: 12px;
+  font-size: 19px;
 }
 
 .form__button:hover {
