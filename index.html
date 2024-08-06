@@ -37,36 +37,39 @@
 
       <section class="section">
         <header class=>
-          <h2 class="header__Secondary">Dodaj nowe zadanie</h2>
+          <h3 class="header__TertiaryOne">Dodaj nowe zadanie</h3>
         </header>
 
         <div class="section__paragraph">
           <form class="form js-form">
             <input class="form__newTask js-form__newTask" type="text" name="addTask"
               placeholder="Co jest do zrobienia?" />
-            <button class="form__button js-form__button">Dodaj zadania</button>
+            <button class="form__button js-form__button">Dodaj zadanie</button>
           </form>
         </div>
       </section>
 
       <section class="section">
-        <header>
-          <h3 class="header__Tertiary">Lista zadań</h3>
-        </header>
-
-        <section class="section section__buttons">
-          <div class="section__container js-section__buttonsContainer ">
+        <header class="section__header">
+          <h3 class="header__TertiaryTwo">Lista zadań</h3>
+          <div class="section__buttonsContainer js-section__buttonsContainer ">
             <button
-              class="section__buttonToggleHideDone .section__buttonToggleHideDone--marginTop js-section__buttonToggleHideDone">Pokaż
+              class="section__buttonToggleHideDone section__buttonToggleHideDone--marginTop js-section__buttonToggleHideDone">Pokaż
               ukończone</button>
             <button class="section__buttonDoneAll js-section__buttonDoneAll">Zakończ wszystkie</button>
           </div>
-          <div class="section__paragraph--taskList">
-            <ul class="tasks js-tasks"></ul>
-          </div>
-        </section>
-
+        </header>
       </section>
+
+      <section class="section section--tasks">
+        <div class="section__paragraph--taskList">
+          <ul class="tasks js-tasks"></ul>
+        </div>
+      </section>
+
+
+
+
     </div>
   </main>
 </body>
